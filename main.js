@@ -170,3 +170,107 @@ fetch(apiUrlDetailBora)
   .catch(error => {
     console.error('Hubo un problema con la petición fetch:', error);
   });
+
+
+  /* Second Car detail API call
+*/
+  
+const apiUrlDetailCorolla = 'https://parallelum.com.br/fipe/api/v1/carros/marcas/56/modelos/5042/anos/2017-1';
+
+fetch(apiUrlDetailCorolla)
+  .then(response => {
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+
+    const modelSecondCar = document.getElementById('detail_second_car');
+    const priceSecondCar = document.getElementById('price_second_car');
+    const yearSecondCar = document.getElementById('year_second_car');
+    const brandSecondCar = document.getElementById('brand_second_car');
+
+    var json = JSON.parse(JSON.stringify(data));
+
+    modelSecondCar.textContent = json.Modelo;
+    priceSecondCar.textContent = json.Valor;
+    yearSecondCar.textContent = json.AnoModelo;
+    brandSecondCar.textContent = json.Marca;
+
+  })
+  .catch(error => {
+    console.error('Hubo un problema con la petición fetch:', error);
+  });
+
+
+
+   /* Third Car detail API call
+*/
+  
+const apiUrlDetailSwift = 'https://parallelum.com.br/fipe/api/v1/carros/marcas/55/modelos/6931/anos/2015-1';
+
+fetch(apiUrlDetailSwift)
+  .then(response => {
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+
+    const modelThirdCar = document.getElementById('detail_third_car');
+    const priceThirdCar = document.getElementById('price_third_car');
+    const yearThirdCar = document.getElementById('year_third_car');
+    const brandThirdCar = document.getElementById('brand_third_car');
+
+    var json = JSON.parse(JSON.stringify(data));
+
+    modelThirdCar.textContent = json.Modelo;
+    priceThirdCar.textContent = json.Valor;
+    yearThirdCar.textContent = json.AnoModelo;
+    brandThirdCar.textContent = json.Marca;
+
+  })
+  .catch(error => {
+    console.error('Hubo un problema con la petición fetch:', error);
+  });
+
+
+  
+  /* Fourth Car detail API call
+*/
+  
+const apiUrlDetailPorsche = 'https://parallelum.com.br/fipe/api/v1/carros/marcas/47/modelos/9293/anos/2022-1';
+
+fetch(apiUrlDetailPorsche)
+  .then(response => {
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => {
+
+    const modelFourthCar = document.getElementById('detail_fourth_car');
+    const priceFourthCar = document.getElementById('price_fourth_car');
+    const yearFourthCar = document.getElementById('year_fourth_car');
+    const brandFourthCar = document.getElementById('brand_fourth_car');
+
+    var json = JSON.parse(JSON.stringify(data));
+
+    modelFourthCar.textContent = json.Modelo;
+    priceFourthCar.textContent = json.Valor;
+    yearFourthCar.textContent = json.AnoModelo;
+    brandFourthCar.textContent = json.Marca;
+
+  })
+  .catch(error => {
+    console.error('Hubo un problema con la petición fetch:', error);
+  });
+
+
+  
