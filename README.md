@@ -15,9 +15,11 @@ El dashboard utiliza tecnologías modernas como HTML/CSS, JavaScript, Bootstrap 
 
 El dashboard está diseñado para proporcionar una interfaz visual intuitiva para interactuar con los datos proporcionados por la API. Incluye diversas funcionalidades para visualizar y analizar los datos de manera efectiva.
 
+![](./assets/img/Dashboard.jpg)
+
 * ## 2. Instalación
 
-- [a] Clonar el Repositorio: Clonar el repositorio en tu máquina local utilizando Git.
+- [a] Clonar el repositorio en tu máquina local utilizando Git.
 - [b] Ir al directorio del proyecto.
 - [c] Instalar las dependencias del proyecto utilizando npm.
 - [d] Crear un archivo .env en el directorio raíz del proyecto y configura las variables de entorno necesarias, como la URL de la API.
